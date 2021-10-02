@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--My Byte CoinVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MyByteCoinVC" customModule="MyByteCoin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ByteCoin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2DQ-Db-VNd">
+                                <rect key="frame" x="122" y="84" width="170.5" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="z1A-6U-EId"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <color key="textColor" name="Title Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AGt-P3-P6p">
+                                <rect key="frame" x="109.5" y="174" width="195" height="100"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1cX-gW-z0S">
+                                        <rect key="frame" x="10" y="20" width="175" height="60"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitcoinsign.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="FQL-hq-8al">
+                                                <rect key="frame" x="0.0" y="0.5" width="60" height="59"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="eh9-MB-p6I"/>
+                                                    <constraint firstAttribute="height" constant="60" id="pko-hQ-WtN"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="....." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d8J-CQ-be7">
+                                                <rect key="frame" x="70" y="0.0" width="34.5" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="esg-V2-hEI">
+                                                <rect key="frame" x="114.5" y="0.0" width="60.5" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="BXh-NR-jVB"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="YwJ-z3-DWc"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="FQL-hq-8al" firstAttribute="leading" secondItem="1cX-gW-z0S" secondAttribute="leading" id="WSM-lm-NgQ"/>
+                                            <constraint firstAttribute="trailing" secondItem="esg-V2-hEI" secondAttribute="trailing" id="x9w-zP-dnI"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="1cX-gW-z0S" firstAttribute="leading" secondItem="AGt-P3-P6p" secondAttribute="leading" constant="10" id="Nlx-HP-sBI"/>
+                                    <constraint firstItem="1cX-gW-z0S" firstAttribute="centerY" secondItem="AGt-P3-P6p" secondAttribute="centerY" id="kRU-h7-wSb"/>
+                                    <constraint firstAttribute="trailing" secondItem="1cX-gW-z0S" secondAttribute="trailing" constant="10" id="xo4-2u-bJx"/>
+                                    <constraint firstAttribute="height" constant="100" id="yfb-tU-grM"/>
+                                </constraints>
+                            </view>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZZa-mz-IVy">
+                                <rect key="frame" x="0.0" y="666" width="414" height="216"/>
+                            </pickerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="Background Color"/>
+                        <constraints>
+                            <constraint firstItem="ZZa-mz-IVy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4qd-6U-wCx"/>
+                            <constraint firstItem="2DQ-Db-VNd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="B53-5S-kel"/>
+                            <constraint firstItem="AGt-P3-P6p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fvW-NJ-VsS"/>
+                            <constraint firstItem="2DQ-Db-VNd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hBU-fp-dd0"/>
+                            <constraint firstItem="AGt-P3-P6p" firstAttribute="top" secondItem="2DQ-Db-VNd" secondAttribute="bottom" constant="40" id="uUz-dq-ri7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZZa-mz-IVy" secondAttribute="trailing" id="vpa-rN-W0a"/>
+                            <constraint firstItem="ZZa-mz-IVy" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="20" id="wim-8y-Jeb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="currencyLbl" destination="esg-V2-hEI" id="2GI-fK-Vsb"/>
+                        <outlet property="pickerView" destination="ZZa-mz-IVy" id="8au-B5-n5F"/>
+                        <outlet property="rateLbl" destination="d8J-CQ-be7" id="iC4-B0-vGp"/>
+                        <outlet property="rateView" destination="AGt-P3-P6p" id="OnC-wB-18w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44.927536231884062" y="66.964285714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bitcoinsign.circle.fill" catalog="system" width="128" height="121"/>
+        <namedColor name="Background Color">
+            <color red="0.50599998235702515" green="0.92500001192092896" blue="0.92500001192092896" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Title Color">
+            <color red="0.18799999356269836" green="0.20800000429153442" blue="0.28600001335144043" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
